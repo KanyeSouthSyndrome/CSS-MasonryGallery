@@ -1,0 +1,70 @@
+.Container {
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  /*4 fractions tall*/
+  grid-template-columns: repeat(4, 175px);
+  /*4 sections, each 175px in width*/
+  gap: 10px 10px;
+  /*10px vertical gap, 10px horizontal      gap*/
+  place-items: stretch;
+  /* The CSS place-items shorthand property allows you to align items along both the block and inline directions at once 
+(i.e. the align-items and justify-items properties)*/
+}
+
+.GRID-ITEM-I {
+  background-color: dodgerblue;
+  grid-column: 1 / span 2;
+  /*Starts at col-line 1, spans 2 columns*/
+  grid-row: 1 / span 2;
+  /*Starts at row-line 1, spans 2 rows*/
+}
+
+.GRID-ITEM-II {
+  background-color: deepskyblue;
+}
+
+.GRID-ITEM-III {
+  background-color: deepskyblue;
+}
+
+.GRID-ITEM-IV {
+  background-color: turquoise;
+  grid-column: 3 / span 2;
+  /*begins on 3rd column, span 2 columns*/
+}
+
+.GRID-ITEM-V {
+  background-color: turquoise;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  /*begins in 1st column, starts on 3rd     row*/
+}
+
+.GRID-ITEM-VI {
+  background-color: turquoise;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  /*begins in 2nd column, starts on 4th     row*/
+}
+
+.GRID-ITEM-VII {
+  background-color: turquoise;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  /*begins in 1st column, starts on 4th     row*/
+}
+
+.GRID-ITEM-VIII {
+  background-color: turquoise;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  /*begins in 2nd column, starts on 4th     row*/
+}
+
+.GRID-ITEM-IX {
+  background-color: turquoise;
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  /*begins in 2nd column, starts on 4th     row*/
+}
